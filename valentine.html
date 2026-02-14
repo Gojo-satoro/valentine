@@ -374,6 +374,25 @@
         }
         .music-btn:hover { background: rgba(255,255,255,0.15); transform: scale(1.1); }
 
+        .site-footer {
+            position: fixed; bottom: 0; left: 0; right: 0;
+            z-index: 150; text-align: center;
+            padding: 10px 20px;
+            background: linear-gradient(transparent, rgba(0,0,0,0.6));
+            font-size: 12px; color: rgba(255,255,255,0.4);
+            letter-spacing: 0.5px;
+        }
+        .site-footer a {
+            color: var(--primary-soft, #ff6b9d);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .site-footer a:hover { color: #fff; }
+        .site-footer .tiktok-icon {
+            display: inline-block; vertical-align: middle;
+            margin-right: 4px; font-size: 14px;
+        }
+
         @media (max-width: 600px) {
             .form-card { padding: 24px 18px; }
             .theme-grid { grid-template-columns: repeat(3, 1fr); gap: 8px; }
@@ -483,6 +502,13 @@
         <div class="v-sender" id="vSender"></div>
     </div>
 </div>
+
+<footer class="site-footer">
+    Cree par <strong>Christopher NGUEMA</strong> &mdash;
+    <a href="https://www.tiktok.com/@scientifique3?_r=1&_t=ZS-93uQ7z1Vbc7" target="_blank" rel="noopener">
+        <span class="tiktok-icon">🎵</span>@scientifique3
+    </a>
+</footer>
 
 <button class="music-btn" id="musicBtn" onclick="toggleMusic()" style="display:none;">🎵</button>
 
